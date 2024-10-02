@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Relação do Java Script com outras linguagens</h1>
+        <div class="row">
+            <div class="col-md-4 text-center mb-4">
+                <div class="card shadow" onclick="showPopup('jsHistoria')">
+                    <img src="img/js.png" class="card-img-top" alt="JavaScript">
+                    <div class="card-body">
+                        <h5 class="card-title">História do JavaScript</h5>
+                        <p class="card-text">O JavaScript é uma das linguagens de programação mais populares e amplamente usadas no mundo do desenvolvimento web. Sua história começa em 1995, quando Brendan Eich, um engenheiro da empresa Netscape, foi incumbido de criar uma linguagem de script que pudesse ser usada em navegadores web. Originalmente, o projeto deveria ser desenvolvido em 10 dias, o que deu origem ao que inicialmente foi chamado de Mocha, depois LiveScript, e finalmente JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="card shadow" onclick="showPopup('relaçãocomhtml')">
+                    <img src="img/html.png" class="card-img-top" alt="HTML">
+                    <div class="card-body">
+                        <h5 class="card-title">Relação com HTML</h5>
+                        <p class="card-text">HTML é a linguagem de marcação que estrutura páginas web, enquanto JavaScript adiciona interatividade e dinamismo a essa estrutura. JavaScript manipula o DOM (Document Object Model) para alterar elementos HTML em resposta a eventos, como cliques.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="card shadow" onclick="showPopup('relaçãocomcss')">
+                    <img src="img/css.png" class="card-img-top" alt="CSS">
+                    <div class="card-body">
+                        <h5 class="card-title">Relação com CSS</h5>
+                        <p class="card-text">CSS (Cascading Style Sheets) é utilizado para estilizar a apresentação visual de páginas web, enquanto JavaScript manipula o comportamento e a interatividade. JavaScript pode alterar dinamicamente as propriedades de estilo definidas pelo CSS, permitindo que os desenvolvedores modifiquem a aparência de elementos em resposta a eventos do usuário.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="card shadow" onclick="showPopup('relaçãocomphp')">
+                    <img src="img/php.png" class="card-img-top" alt="PHP">
+                    <div class="card-body">
+                        <h5 class="card-title">Relação com PHP</h5>
+                        <p class="card-text">PHP (Hypertext Preprocessor) é uma linguagem de script do lado do servidor que gera conteúdo dinâmico e interage com bancos de dados. JavaScript, por outro lado, é executado no lado do cliente e permite a interação do usuário em tempo real. Embora atuem em camadas diferentes, eles podem se comunicar: JavaScript pode enviar solicitações assíncronas (AJAX) para scripts PHP, que processam dados e retornam resultados para o navegador.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="jsHistoria" class="popup">
+        <h3>Curiosidade JavaScript</h3>
+        <p>Apesar de sua popularidade atual, o JavaScript foi inicialmente visto como uma linguagem de "brinquedo" por muitos desenvolvedores, principalmente porque foi criado rapidamente e projetado para tarefas simples no navegador. No entanto, ao longo dos anos, ele evoluiu significativamente com a adição de recursos avançados, tornando-se uma linguagem robusta e capaz de desenvolver desde pequenas interações em sites até grandes aplicações web e até servidores com o Node.js. Hoje, JavaScript é a linguagem mais usada no GitHub.</p>
+        <button onclick="closePopup()">Fechar</button>
+    </div>
+
+    <div id="relaçãocomhtml" class="popup">
+        <h3>Curiosidade sobre o Html com Java Script</h3>
+        <p>Apesar de serem usados juntos, HTML foi criado em 1991 e JavaScript em 1995, desenvolvidos de maneira independente. Essa colaboração é essencial para a criação de experiências web interativas.</p>
+        <button onclick="closePopup()">Fechar</button>
+    </div>
+
+    <div id="relaçãocomcss" class="popup">
+        <h3>Curiosidade sobre o Css com Java Script</h3>
+        <p>Uma curiosidade é que, com a introdução de frameworks como jQuery, tornou-se mais fácil manipular estilos CSS com JavaScript, permitindo animações e transições dinâmicas em páginas web, tornando a experiência do usuário mais envolvente.</p>
+        <button onclick="closePopup()">Fechar</button>
+    </div>
+
+    <div id="relaçãocomphp" class="popup">
+        <h3>Relação com PHP</h3>
+        <p>Embora o PHP seja uma linguagem de servidor e o JavaScript uma linguagem de cliente, ambos podem trabalhar juntos para criar aplicações web robustas, onde o PHP trata dados no servidor e o JavaScript gerencia a interação do usuário no navegador.</p>
+        <button onclick="closePopup()">Fechar</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
